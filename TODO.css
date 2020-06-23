@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: #f1f1f1;
+    margin-bottom: 55px;
+    touch-action: none;
+}
+/*header*/
+header{
+    height: 150px;
+}
+header h1{
+    text-align: center;
+    opacity: 50%;
+    font-size: 80px;
+}
+header #manageButton{
+    height: 35px;
+    margin-top: 1px;
+    margin-left: 10px;
+    border-radius: 3px;
+    width:12%;
+}
+#input-view{
+    margin-left: 4px;
+    width:80%;
+    height: 30px;
+    border:3px solid grey;
+    border-radius: 5px;
+    margin-right:0;
+    float: left;
+}
+#input-box{
+    height: 30px;
+    width:87%;
+    font-size: larger;
+    border:none;
+}
+#input-box:focus{
+    border: none;
+}
+#addButton{
+    height: 25px;
+    width: 10%;
+    border: none;
+}
+#addButton:focus{
+    border: none;
+}
+/*section*/
+.todo-view{
+    /* height: 450px; */
+    overflow: scroll;
+}
+#todo-list{
+    overflow: hidden;
+}
+
+#todo-list .list-li{
+    line-height: 60px;
+    border-bottom: 1px solid #fcfcfc;
+    position: relative;
+    padding: 0 12px;
+    color: black;
+    background: #f2f2f2;
+    -webkit-transform: translateX(0px);
+}
+#todo-list .completed{
+    color: rgb(212, 212, 212);
+    text-decoration:line-through;
+}
+#todo-list .delete-btn{
+    position: absolute;
+    top: 0;
+    right: -80px;
+    text-align: center;
+    background: red;
+    color: #fff;
+    width: 80px;
+}
+#todo-list .com-delete-btn{
+    position: absolute;
+    top: 0;
+    right: -80px;
+    text-align: center;
+    background: red;
+    color: #fff;
+    width: 40px;
+}
+#todo-list .recover-btn{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    text-align: center;
+    background: #ffcb20;
+    color: #fff;
+    width: 40px;
+}
+.checkbox{
+    margin-right: 5px;
+}
+#deleteButton{
+    float: right;
+    margin-right: 10px;
+    margin-left: 5px;
+    color:white;
+    background-color: red;
+    border:2px solid red;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+/*footer*/
+footer{
+    font-size: 15px;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background-color:  #f1f1f1;
+}
+.manageBox{
+    margin-bottom: 5px;
+}
+#selectAll{
+    margin-top: 3px;
+    margin-right: 3px;
+    float: right;
+}
+#showTypeBox{
+    text-align: center;
+}
+.showType{
+    margin: 3px;
+}
+.selected{
+    border:2px solid black;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#completeAll{
+    position: absolute;
+    right: 10px;
+}
