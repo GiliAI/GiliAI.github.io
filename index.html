@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+        <title>TODO-MOBILE</title>
+        <link rel="stylesheet" href="TODO.css" />
+    </head>
+    <body>
+        <header>
+            <h1>TODO</h1>
+            <div id="input-view">
+                <input id="input-box" type="text" placeholder="please input at here" autofocus/>
+                <input id="addButton" type="button" value="确认"/>
+            </div>
+            <input id="manageButton" type="button" value="管理"/>
+        </header> 
+        <section class="content">
+            <div class="todo-view">
+                <ul id="todo-list"></ul>
+            </div>
+        </section>
+        <footer>
+            <div class="manageBox">
+                <span class="todo-count"></span>
+            </div>
+            <!-- <input id="deleteButton" type="button" value="删除"/> -->
+            <div id="showTypeBox">
+                <label class="showType selected">all</label>                
+                <label class="showType">left</label>
+                <label class="showType">complete</label>
+                <input id="completeAll" type="button" value="一键完成"/>
+            </div>
+        </footer>
+    </body>
+
+    <script type="text/javascript" src="TODO.js"></script>
+</html>
